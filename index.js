@@ -28,10 +28,12 @@ app.get('/', (req, res) => {
 
 //mostrar requisição mostrar a resposta que vai ser JSON
 
-res.json({ message: 'Oi Express'})
+res.json({ message: 'Oi Thiago, Bruna Xavier e Luiz Mazoni '})
 
 })
 
 //entregar a porta
 
-app.listen(3000)
+app.listen(3000, () => {
+    console.log("🚀 Servidor rodando na porta 3000");
+  });
